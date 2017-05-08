@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="apple-touch-icon" href="https://mapzen.com/common/styleguide/images/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="https://mapzen.com/common/styleguide/images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://mapzen.com/common/styleguide/images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="manifest" href="https://mapzen.com/common/styleguide/images/favicons/manifest.json">
+    <link rel="mask-icon" href="https://mapzen.com/common/styleguide/images/favicons/safari-pinned-tab.svg" color="#2C1E3F">
+
+    <title>Tangram - Tangram</title>
+
+    <link rel="stylesheet" href="Tangram%20-%20Tangram_files/documentation.css">
+    <link rel="stylesheet" href="Tangram%20-%20Tangram_files/highlight.css">
+    <link href="Tangram%20-%20Tangram_files/mapzen.css" rel="stylesheet">
+  </head>
+
+  <body data-spy="scroll" data-target=".toc" data-offset="10" class="fixed-main-nav">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://mapzen.com/">
+        <div class="mapzen-logo"></div>
+        <h1 class="sr-only">Mapzen</h1>
+      </a>
+    </div>
+    <!-- new nav bar showing user's login status -->
+    <div class="collapse navbar-collapse" id="navbar-menu">
+      <ul class="nav navbar-nav navbar-left">
+        <li class="inactive"><a href="https://mapzen.com/products/">Products</a></li>
+        <li class="inactive active"><a href="https://mapzen.com/documentation/">Documentation</a></li>
+        <li class="inactive"><a href="https://mapzen.com/pricing/">Pricing</a></li>
+        <li class="inactive"><a href="https://mapzen.com/blog/">Blog</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="inactive dropdown"><a id="sign-in" class="dropdown-toggle" data-toggle="dropdown" data-target="#" data-nav-run="yes" role="button"> <div class="login-profile-default" id="login-profile"> <img src="Tangram%20-%20Tangram_files/default-avatar.svg" style="border-radius: 50%; position: absolute; top: 1px; left: 1px;" width="24" height="24"> </div> <div class="login-txt"> Account </div></a><ul class="dropdown-menu">  <li><a href="https://mapzen.com/dashboard">Dashboard</a></li>  <li><a href="https://mapzen.com/settings">Settings</a></li>  <li id="sign-out"><a href="#"> Logout</a></li></ul></li>
+        <li class="inactive" style="font-size: 0px;"><a id="sign-up" href="https://mapzen.com/developers/sign_up" style="min-width: 20px; padding: 0px; min-height: 0px;"> </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    
+
+    <div class="documentation-hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+            <h1>Tangram</h1>
+            <p>Render 2D and 3D maps with fine control over almost every aspect of the map-making process.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container documentation-nav hidden-print">
+      <div class="row headroom">
+        <div class="col-xs-12 col-md-8">
+          <ol class="breadcrumb">
+  <li><a href="https://mapzen.com/documentation/">Documentation</a></li>
+
+  
+  
+  
+  
+    <li><a href="https://mapzen.com/documentation/tangram/">Tangram</a></li>
+
+    
+    
+      
+    
+      
+        <li class="active">Concept overviews</li>
+
+        
+        
+        
+        
+          <li class="active">Tangram</li>
+        
+
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+</ol>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div id="mkdocs_search_modal" class="search-container" tabindex="-1" aria-labelledby="Search Modal" aria-hidden="true">
+  <form action="https://www.google.com/search" method="get">
+    <div class="form-group inline-submit">
+      <input name="as_sitesearch" value="mapzen.com/documentation" type="hidden">
+      <input name="q" placeholder="search documentation" class="col-xs-8" type="search">
+      <input class="btn btn-transparent col-xs-4" value="search" type="submit">
+    </div>
+  </form>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container documentation-container">
+      <div class="row">
+      
+        <div class="col-xs-12 col-md-3"><div class="toc hidden-print affix-top" role="directory" id="toc" style="">
+  <ul class="nav toc-nav">
+  <!-- Elements of the nav come from each section's config file, toc contents come from parsed html -->
+  <!-- Sub-nav is coming from config too, but sub-toc contents come from the html of the page -->
+  
+    
+      
+        <li class="toc-top-level">
+          <a href="https://mapzen.com/documentation/tangram/">Home</a>
+        </li>
+        
+      
+    
+      
+        <li class="toc-top-level toc-current">
+          <a href="#" class="toc-subnav-toggle">Concept overviews</a>
+          
+            <ul class="toc-subnav toc-expand">
+              
+                
+  <li class="toc-current">
+    <a href="https://mapzen.com/documentation/tangram/Tangram-Overview/">Tangram</a>
+    
+      <ul class="toc-subnav toc-expand">
+
+  <li class="main"><a href="#tangram-js">Tangram-JS</a></li>
+  
+
+  <li class="main"><a href="#tangram-es">Tangram-ES</a></li>
+  
+
+  <li class="main"><a href="#releases">Releases</a></li>
+  
+
+  <li class="main"><a href="#leaflet">Leaflet</a></li>
+  
+    <li class=""><a href="#leaflet-options">Leaflet options</a></li>
+  
+    <li class=""><a href="#multiple-maps">Multiple Maps</a></li>
+  
+
+  <li class="main"><a href="#the-scene-file">The Scene File</a></li>
+  
+
+  <li class="main"><a href="#scene-bundling">Scene Bundling</a></li>
+  
+
+  <li class="main"><a href="#getting-started">Getting Started</a></li>
+  
+
+  <li class="main"><a href="#contributing">Contributing</a></li>
+  
+
+</ul>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/Scene-file/">The scene file</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/Filters-Overview/">Data filters</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/Styles-Overview/">Styles</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/Shaders-Overview/">Shaders</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/Raster-Overview/">Raster sources</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/Lights-Overview/">Lights</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/Cameras-Overview/">Cameras</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/Materials-Overview/">Materials</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/yaml/">YAML</a>
+    
+  </li>
+
+
+              
+            </ul>
+          
+        </li>
+      
+    
+      
+        <li class="toc-top-level">
+          <a href="#" class="toc-subnav-toggle">Syntax reference</a>
+          
+            <ul class="toc-subnav">
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/cameras/">cameras</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/draw/">draw</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/global/">global</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/fonts/">fonts</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/import/">import</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/layers/">layers</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/lights/">lights</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/materials/">materials</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/scene/">scene</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/shaders/">shaders</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/sources/">sources</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/styles/">styles</a>
+    
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/textures/">textures</a>
+    
+  </li>
+
+
+              
+            </ul>
+          
+        </li>
+      
+    
+      
+        <li class="toc-top-level">
+          <a href="#" class="toc-subnav-toggle">Get started</a>
+          
+            <ul class="toc-subnav">
+              
+                
+  <!-- This is when there is subcategory coming from config.yml -->
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/Tangram-Setup/"> Setup guides</a>
+    <ul class="toc-subnav  ">
+      
+    </ul>
+  </li>
+
+
+              
+                
+  <!-- This is when there is subcategory coming from config.yml -->
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/tutorials/custom-styles/"> Tutorials</a>
+    <ul class="toc-subnav  ">
+      
+    </ul>
+  </li>
+
+
+              
+                
+  <li>
+    <a href="https://mapzen.com/documentation/tangram/demos/">Demos</a>
+    
+  </li>
+
+
+              
+            </ul>
+          
+        </li>
+      
+    
+      
+        <li class="toc-top-level">
+          <a href="https://mapzen.com/documentation/tangram/Javascript-API/">JavaScript API</a>
+        </li>
+        
+          
+        
+      
+    
+      
+        <li class="toc-top-level">
+          <a href="https://mapzen.com/documentation/tangram/Android-API/">Android API</a>
+        </li>
+        
+          
+        
+      
+    
+      
+        <li class="toc-top-level">
+          <a href="https://mapzen.com/documentation/tangram/iOS-API/">iOS API</a>
+        </li>
+        
+          
+        
+      
+    
+  
+  </ul>
+</div></div>
+        <div class="col-xs-12 col-md-9" role="main">
+          <div class="documentation-content">
+            
+
+<p>Tangram is an open-source 3D rendering engine specifically designed for drawing maps, using the <a href="https://en.wikipedia.org/wiki/OpenGL">OpenGL</a>
+ graphics API. It parses vector data in a variety of formats, and 
+produces a 3D scene with geometry, labels, and icons all built and 
+styled on the fly. It also accepts tiled raster inputs, with special 
+facility for processing terrain data.</p>
+<p>Tangram is implemented in two official flavors: <a href="https://github.com/tangrams/tangram">Tangram-JS</a> for use in web browsers, and <a href="https://github.com/tangrams/tangram-es">Tangram-ES</a> for native mapping on mobile devices.</p>
+<p>Both libraries use a “scene file” to configure and modify the data 
+sources, filters, and display options used when drawing the map. The 
+scene file is written in YAML using a custom, Tangram-specific syntax.</p>
+<section class="section2" id="tangram-js"><h2>Tangram-JS<a class="headerlink" href="#tangram-js" title="Permanent link"> </a></h2>
+<p><a href="https://github.com/tangrams/tangram">Tangram-JS</a> is a JavaScript library for use in web browsers. It uses <a href="https://www.khronos.org/webgl/">WebGL</a> to construct and draw vector and raster map data at high speeds. It provides an API through a <code>scene.config</code>
+ object, which is essentially the scene file in JavaScript object form –
+ this config object may be modified at run-time to change nearly any 
+property of the scene.</p>
+</section><section class="section2" id="tangram-es"><h2>Tangram-ES<a class="headerlink" href="#tangram-es" title="Permanent link"> </a></h2>
+<p>Tangram-ES is a C++ library, with a rendering engine based on OpenGL 
+ES, and designed for mobile and embedded systems. It currently targets 
+five platforms: Android, iOS, Mac OS X, Ubuntu Linux, and Raspberry Pi.</p>
+</section><section class="section2" id="releases"><h2>Releases<a class="headerlink" href="#releases" title="Permanent link"> </a></h2>
+<p>Tangram-JS versions are matched to Leaflet versions to ensure ongoing
+ compatability (primarily relating to scrollwheel zoom behavior). In 
+general, the latest version of Tangram is based on the latest version of
+ Leaflet, but if you require a specific version of Leaflet or Tangram, 
+refer to the below compatability table.</p>
+<div class="table-wrapper"><table class="table">
+<thead>
+<tr>
+<th>Tangram version</th>
+<th>Leaflet version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.7 and previous</td>
+<td>0.7.7</td>
+</tr>
+<tr>
+<td>0.8 and later</td>
+<td>1.x</td>
+</tr>
+</tbody>
+</table></div>
+<p>The latest release of Tangram-JS may always be referenced at:</p>
+<p><a href="https://mapzen.com/tangram/tangram.min.js">https://mapzen.com/tangram/tangram.min.js</a></p>
+<p>for the minified version, and </p>
+<p><a href="https://mapzen.com/tangram/tangram.debug.js">https://mapzen.com/tangram/tangram.debug.js</a></p>
+<p>for the debug version.</p>
+<p>If you’d like to use a specific release of Tangram-JS, you may specify its version number in its url:</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://mapzen.com/tangram/0.8/tangram.min.js"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p><a href="https://github.com/tangrams/tangram/releases/latest">See the latest Tangram-JS release here.</a></p>
+<p>Tangram-ES releases are tagged according to their target platform. </p>
+<p><a href="https://github.com/tangrams/tangram-es/releases">See the latest Tangram-ES releases here.</a></p>
+<p>Note: the documentation always refers to the latest release of 
+Tangram – reverse compatibility of scene file syntax is not guaranteed.</p>
+</section><section class="section2" id="leaflet"><h2>Leaflet<a class="headerlink" href="#leaflet" title="Permanent link"> </a></h2>
+<p><code>[Tangram-JS only]</code></p>
+<p>Tangram-JS includes an interface to the popular <a href="http://leafletjs.com/">Leaflet</a>
+ web-mapping library. In this way Tangram-JS is technically a Leaflet 
+“plugin,” with Leaflet handling user interaction such as clicking, 
+zooming, and panning, and Tangram providing the content of each tile.</p>
+<p>Note: Tangram requires that the Leaflet map use the default “Web 
+Mercator” Coordinate Reference System, also known as EPSG:3857. As this 
+is the default, it is not necessary to specify it in the Leaflet 
+instantiation, but here’s what it would look like if you did:</p>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">map</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="s1">'map'</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">crs</span><span class="o">:</span> <span class="nx">L</span><span class="p">.</span><span class="nx">CRS</span><span class="p">.</span><span class="nx">EPSG3857</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<section class="section3" id="leaflet-options"><h3>Leaflet options<a class="headerlink" href="#leaflet-options" title="Permanent link"> </a></h3>
+<p>When Tangram’s Leaflet layer is instantiated, various parameters may be passed to the layer inside the <em>options object</em> to control the layer’s appearance and behavior.</p>
+<p></p><div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">layer</span> <span class="o">=</span> <span class="nx">Tangram</span><span class="p">.</span><span class="nx">leafletLayer</span><span class="p">({</span>
+    <span class="nx">scene</span><span class="o">:</span> <span class="s1">'scene.yaml'</span><span class="p">,</span>
+    <span class="nx">attribution</span><span class="o">:</span> <span class="s1">'attribution string'</span>
+<span class="p">});</span>
+</pre></div>
+<br>
+This object may contain any of the <a href="http://leafletjs.com/reference.html">standard Leaflet layer options</a>, plus a number of Tangram-specific options, listed below.<p></p>
+<section class="section4" id="scene"><h4>scene<a class="headerlink" href="#scene" title="Permanent link"> </a></h4>
+<p>The required <code>scene</code> parameter specifies the URL of the <a href="https://mapzen.com/documentation/tangram/Scene-file/">scene file</a> to be loaded.<br>
+</p><div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">layer</span> <span class="o">=</span> <span class="nx">Tangram</span><span class="p">.</span><span class="nx">leafletLayer</span><span class="p">({</span>
+    <span class="nx">scene</span><span class="o">:</span> <span class="s1">'scene.yaml'</span>
+<span class="p">});</span>
+</pre></div>
+<p></p>
+</section><section class="section4" id="preupdatepostupdate"><h4>preUpdate/postUpdate<a class="headerlink" href="#preupdatepostupdate" title="Permanent link"> </a></h4>
+<p>The optional <code>preUpdate</code> and <code>postUpdate</code> 
+parameters allow functions to be referenced or defined, to be called 
+immediately before and/or after Tangram’s frame update loop runs (up to 
+60 frames per second, depending on hardware and scene complexity). These
+ functions are called each frame, continuously, regardless of whether 
+the Tangram scene is animated (e.g. the map may not be visually changing
+ in any way, but the update functions will still be called). They are 
+passed a single argument, a flag indicating if Tangram will render (for <code>preUpdate</code>), or just did render (for <code>postUpdate</code>) new content.<br>
+</p><div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">layer</span> <span class="o">=</span> <span class="nx">Tangram</span><span class="p">.</span><span class="nx">leafletLayer</span><span class="p">({</span>
+    <span class="nx">preUpdate</span><span class="o">:</span> <span class="nx">myPreUpdateFunction</span><span class="p">,</span>
+    <span class="nx">postUpdate</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">didRender</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'postUpdate!'</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">didRender</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'new frame rendered!'</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+<p></p>
+</section><section class="section4" id="modifyscrollwheel"><h4>modifyScrollWheel<a class="headerlink" href="#modifyscrollwheel" title="Permanent link"> </a></h4>
+<p>By default, Tangram modifies Leaflet’s scrollwheel behavior, for 
+better synchronization with its own render loop while zooming. If this 
+interferes with your application, you can disable this behavior with the
+ optional <code>modifyScrollWheel</code> option:</p>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">layer</span> <span class="o">=</span> <span class="nx">Tangram</span><span class="p">.</span><span class="nx">leafletLayer</span><span class="p">({</span>
+    <span class="nx">modifyScrollWheel</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+
+</section><section class="section4" id="webglcontextoptions"><h4>webGLContextOptions<a class="headerlink" href="#webglcontextoptions" title="Permanent link"> </a></h4>
+<p>Using this option, WebGL context options may be explicitly added or overridden.</p>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">layer</span> <span class="o">=</span> <span class="nx">Tangram</span><span class="p">.</span><span class="nx">leafletLayer</span><span class="p">({</span>
+    <span class="nx">scene</span><span class="o">:</span> <span class="p">...,</span>
+    <span class="nx">webGLContextOptions</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">preserveDrawingBuffer</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="nx">antialias</span><span class="o">:</span> <span class="kc">false</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+</pre></div>
+
+
+</section></section><section class="section3" id="multiple-maps"><h3>Multiple Maps<a class="headerlink" href="#multiple-maps" title="Permanent link"> </a></h3>
+<p>Due to architectural limitations, there can be only one Tangram map 
+per “browsing context”. This means there can be only one embedded 
+Tangram map on a web page, and one Tangram layer per Leaflet map, 
+although Tangram may be composited with other kinds of Leaflet layers.</p>
+<p>An iframe counts as a separate browsing context, so we make frequent use of the <a href="https://github.com/tangrams/tangram-frame">Tangram-frame repository</a> for this purpose, by using Tangram-frame links as the “src” of iframes.</p>
+</section></section><section class="section2" id="the-scene-file"><h2>The Scene File<a class="headerlink" href="#the-scene-file" title="Permanent link"> </a></h2>
+<p>Tangram uses a “scene file” written in YAML to configure data 
+sources, filters, and styling rules. Its structure and syntax is 
+interchangable between Tangram-JS and Tangram-ES, with a very small 
+number of exceptions as noted in the documentation with <code>[JS only]</code> or <code>[ES only]</code>.</p>
+<p>See <a href="https://mapzen.com/documentation/tangram/Scene-file/">Scene File</a>.</p>
+</section><section class="section2" id="scene-bundling"><h2>Scene Bundling<a class="headerlink" href="#scene-bundling" title="Permanent link"> </a></h2>
+<p>More complex map styles can require a large number of assets, 
+including multiple scene files, textures and sprite images, and so on. 
+For ease of transport, a Tangram scene file and its assets may be 
+bundled in a .zip file, which may then be named in place of the .yaml 
+file when specifying a scene file.</p>
+<p>For example, with Tangram-JS:</p>
+<div class="codehilite"><pre><span></span>    <span class="kd">var</span> <span class="nx">map</span> <span class="o">=</span> <span class="nx">L</span><span class="p">.</span><span class="nx">map</span><span class="p">();</span>
+
+    <span class="kd">var</span> <span class="nx">layer</span> <span class="o">=</span> <span class="nx">Tangram</span><span class="p">.</span><span class="nx">leafletLayer</span><span class="p">({</span>
+        <span class="nx">scene</span><span class="o">:</span> <span class="s1">'scene.zip'</span>
+    <span class="p">});</span>
+
+    <span class="nx">layer</span><span class="p">.</span><span class="nx">addTo</span><span class="p">(</span><span class="nx">map</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Tangram will unpack the zip internally, expecting only a single .yaml
+ file to be in the zip’s root, which it will use as the scene file. Any 
+other bundled .yaml files (eg <a href="https://mapzen.com/blog/introducing-refill-cinnabar-and-zinc-styles-for-tangram/">basemaps</a> or <a href="https://github.com/tangrams/blocks">blocks</a> included with the <a href="https://mapzen.com/documentation/tangram/import/">import</a> block) must therefore be in subdirectories, and all paths in the .yaml file must be relative to this root scene file.</p>
+</section><section class="section2" id="getting-started"><h2>Getting Started<a class="headerlink" href="#getting-started" title="Permanent link"> </a></h2>
+<p>Check out our <a href="https://mapzen.com/documentation/tangram/Tangram-Setup/">Tangram Setup Guides</a> for more information about getting started with your Tangram installation.</p>
+</section><section class="section2" id="contributing"><h2>Contributing<a class="headerlink" href="#contributing" title="Permanent link"> </a></h2>
+<p>Questions? Suggestions? Typos? Bug fixes? We welcome contributions, 
+either to the libraries or to the documentation itself. Learn more at 
+the links below:</p>
+<ul>
+<li><a href="https://github.com/tangrams/tangram/blob/master/CONTRIBUTING.md">Contributing to Tangram-JS</a></li>
+<li><a href="https://github.com/tangrams/tangram-es/blob/master/README.md">Tangram-ES README</a></li>
+</ul>
+</section>
+          </div>
+
+          
+            <div class="pagination pagination-alt headroom">
+              
+                <a class="pagination-link pagination-previous" rel="next" href="https://mapzen.com/documentation/tangram/">
+                  <i class="fa fa-fw fa-angle-left"></i>
+                  <span class="pagination-link-text">Home</span>
+                </a>
+              
+
+              
+
+              
+                <a class="pagination-link pagination-next" rel="prev" href="https://mapzen.com/documentation/tangram/Scene-file/">
+                  <span class="pagination-link-text">The scene file</span>
+                  <i class="fa fa-fw fa-angle-right"></i>
+                </a>
+              
+            </div>
+          
+
+          
+            <div class="documentation-edit headroom-large">
+              
+              
+                <a href="https://github.com/tangrams/tangram-docs/tree/gh-pages/pages/Tangram-Overview.md">
+                  Edit this page on GitHub
+                  <i class="fa fa-2x fa-fw fa-github"></i>
+                </a>
+              
+            </div>
+          
+
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="container headroom-large footroom-large hidden-print">
+      <div class="cta-container">
+  <div class="cta-text">
+    <p>
+      Get your API key for access to Mapzen services.
+    </p>
+  </div>
+  <div class="cta-btn">
+    <a href="https://mapzen.com/developers/" class="btn btn-mapzen">Sign up</a>
+  </div>
+</div>
+    </div>
+
+    
+
+    <footer>
+  <div class="container hidden-print footer-no-background">
+    <div class="row headroom-extra-large">
+      <div class="col-xs-12 text-center">
+        <img src="Tangram%20-%20Tangram_files/compass-primary-lg.png">
+        <h2 class="headroom">Get in touch</h2>
+      </div>
+    </div>
+    <div class="row headroom footroom-large">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+        <p>
+          Working on an interesting problem? Want to know more about 
+what we're doing? Have questions about working with our products and 
+services?
+          </p><p>Send a note to <a href="mailto:hello@mapzen.com" target="_blank">hello@mapzen.com</a></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="headroom-large footer-background">
+    <div class="container">
+      <div class="row headroom">
+        <div class="col-xs-12 text-center headroom-large footroom">
+          <p><strong>Get a rundown of Mapzen happenings at the beginning of every month!</strong></p>
+          <p><a href="https://mapzen.com/newsletter-signup/"><button class="btn btn-white">Sign up for our Newsletter</button></a></p>
+        </div>
+      </div>
+
+      <div class="row headroom-large footer-menu hidden-print">
+        <div class="col-xs-5 col-xs-offset-2 col-sm-5 col-sm-offset-0">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <h6><a href="https://mapzen.com/products/">Products</a></h6>
+              <ul>
+                <li><a href="https://mapzen.com/products/maps/">Maps</a></li>
+                <li><a href="https://mapzen.com/products/search">Mapzen Search</a></li>
+                <li><a href="https://mapzen.com/products/turn-by-turn">Mapzen Mobility</a></li>
+                <li><a href="https://mapzen.com/projects/mobile/">Mobile</a></li>
+                <li><a href="https://mapzen.com/pricing/">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <h6><a href="https://mapzen.com/products/#data">Data</a></h6>
+              <ul>
+                <li><a href="https://mapzen.com/data/metro-extracts/">Metro Extracts</a></li>
+                <li><a href="https://mapzen.com/projects/vector-tiles/">Vector Tile Service</a></li>
+                <li><a href="https://mapzen.com/documentation/terrain-tiles/">Terrain Tile Service</a></li>
+                <li><a href="https://whosonfirst.mapzen.com/">Who's On First</a></li>
+                <li><a href="https://transit.land/">Transitland</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-5 col-sm-7">
+          <div class="row">
+            <div class="col-xs-12 col-sm-5">
+              <h6>Developers</h6>
+              <ul>
+                <li><a href="https://mapzen.com/dashboard/">Developer Platform</a></li>
+                <li><a href="https://mapzen.com/documentation/">Documentation</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <h6>About</h6>
+              <ul>
+                <li><a href="https://mapzen.com/about/">Who we are</a></li>
+                <li><a href="https://mapzen.com/jobs/">Jobs</a></li>
+                <li><a href="https://mapzen.com/terms/">Terms</a></li>
+                <li><a href="https://mapzen.com/privacy/">Privacy policy</a></li>
+                <li><a href="https://mapzen.com/media-resources/">Media resources</a></li>
+                <li><a href="http://status.mapzen.com/">Status</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <h6>Hello</h6>
+              <ul>
+                <li><a href="https://mapzen.com/blog/"><i class="fa fa-fw fa-rss"></i>Blog</a></li>
+                <li><a href="https://github.com/mapzen/"><i class="fa fa-fw fa-github"></i>GitHub</a></li>
+                <li><a href="https://twitter.com/mapzen/"><i class="fa fa-fw fa-twitter"></i>Twitter</a></li>
+                <li><a href="mailto:hello@mapzen.com"><i class="fa fa-fw fa-envelope"></i>E-mail</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row headroom-large footroom-large">
+        <div class="col-xs-12 text-center">
+          <div class="compass-logo"></div>
+          <small class="copyright">© 2017 Mapzen</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script async="" src="Tangram%20-%20Tangram_files/analytics.js"></script><script src="Tangram%20-%20Tangram_files/jquery-1.js"></script>
+    <script src="Tangram%20-%20Tangram_files/highlight.js"></script>
+    <script>var base_url = '..';</script>
+    <script src="Tangram%20-%20Tangram_files/base.js"></script>
+    <script src="Tangram%20-%20Tangram_files/mapzen-styleguide.js"></script>
+    <script src="Tangram%20-%20Tangram_files/script.js"></script>
+    <script src="Tangram%20-%20Tangram_files/script_002.js"></script>
+    <script src="Tangram%20-%20Tangram_files/script_003.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jazzy_008.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jquery_008.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jazzy.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jquery_004.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jazzy_007.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jquery.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jazzy_003.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jquery_005.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jazzy_002.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jquery_007.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jazzy_005.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jquery_006.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jazzy_004.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jquery_003.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jazzy_006.js"></script>
+    <script src="Tangram%20-%20Tangram_files/jquery_002.js"></script>
+
+  
+
+</body></html>
+<!--
+MkDocs version : 0.15.2
+Build Date UTC : 2017-05-08 02:06:27.676277
+Build date: 8 May 2017
+-->
